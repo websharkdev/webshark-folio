@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>webshark folio</title>
+  </head>
+
+  <body>
+    <div class="cursor-dot-outline">.</div>
+    <div class="cursor-dot">.</div>
+
+    <!-- CURSOR -->
+
+    <header class="header" id="header">
+      <div class="container">
+        <div
+          class="
+            header__fixed-menu
+            wow
+            animate__animated animate__fadeInDown animate__delay-1s
+          "
+        >
+          <a href="#">меню</a>
+          <a href="#" class="name">Bortnitskiy Alex</a>
+        </div>
+        <div class="header__top">
+          <!-- end header__menu -->
+          <div class="header__hr"></div>
+
+          <div class="header__menu">
+            <ul class="header__menu-items">
+              <li class="active">
+                <a href="#header">Домашняя</a>
+              </li>
+              <li>
+                <a href="#about">про меня</a>
+              </li>
+              <li>
+                <a href="#works">работы</a>
+              </li>
+              <li>
+                <a href="#feedbakc">отзывы</a>
+              </li>
+              <li>
+                <a href="#form">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__contacts">
+              <a
+                href="mailto:alex.bortnitskiy@gmail.com?subject=Portfolio%20email!"
+                >alex.bortnitskiy@gmail.com</a
+              >
+              <a href="tel:380987584311">380 (98) 758 43 11</a>
+            </div>
+          </div>
+        </div>
+        <!-- header__top -->
+
+        <div class="header__bottom">
+          <h1>
+            <a
+              href=""
+              class="typewrite"
+              data-period="4000"
+              data-type='[ "Веб разработка «под ключ».", "Создание вкусных сайтов."]'
+            >
+              <span class="wrap"></span>
+            </a>
+            <button class="primary-btn" id="header__primary-btn">
+              связаться со мной
+              <span class="dot"></span>
+            </button>
+          </h1>
+        </div>
+        <div class="header__scroll">
+          <div class="circle">/</div>
+          <span>скролл</span>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- HEADER MODAL -->
+
+    <section class="header__modal hide">
+      <div class="container">
+        <div class="header__modal-content">
+          <div class="header__modal-text">
+            <h3>
+              <a
+                href=""
+                class="typewrite"
+                data-period="4000"
+                data-type='[ "Оставить заявку.", "Связаться со мной."]'
+              >
+                <span class="wrap"></span>
+              </a>
+            </h3>
+
+            <p>
+              чтобы оставить заявку, нужно пройти по ссылке ниже. Так вы
+              попадёте на гугл форму, где собственно нужно ответить на вопросы.
+              После того как вы ответите на вопросы, я вам напишу
+            </p>
+
+            <button class="service__btn">
+              <a href="#">заполнить форму <span class="dot"></span></a>
+            </button>
+          </div>
+          <div class="header__modal-img">
+            <img src="./img/project.png" alt="project" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEADER MODAL -->
+    <div class="hr" id="about"></div>
+    <!-- END HR -->
+    <section class="about">
+      <div class="container">
+        <div class="about__content">
+          <div class="about__content-text">
+            <h2 class="primary-h wow animate__animated animate__fadeInUp">
+              про меня
+            </h2>
+            <p class="primary-text wow animate__animated animate__fadeInUp">
+              привет! меня зовут алексей, я веб разработчик сайтов “под ключ”.
+              <br />
+              <br />а это означает что я делаю — дизайн, вёрстку, натяжку...
+              <br />
+              <br />начал я этим заниматься ещё в 2017 году. <br />
+              <br />За это время я сделал десятки работ, которые вы можете
+              увидеть ниже.
+            </p>
+          </div>
+
+          <div
+            class="about__content-img wow animate__animated animate__fadeInUp"
+          >
+            <img src="./img/my__photo.png" alt="my photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT -->
+    <div class="hr" id="works"></div>
+    <!-- END HR -->
+    <section class="works">
+      <div class="container">
+        <div class="works-h">
+          <h2 class="primary-h wow animate__animated animate__fadeInUp">
+            работы
+          </h2>
+        </div>
+
+        <div class="works__accordion works__accordion-short accordionWrapper">
+          <div class="accordionItem">
+            <button class="toggle accordionItemHeading">
+              <span class="primary-number">01.</span> рулетка
+            </button>
+            <div class="accordionItemContent">
+              <div class="accordionItem__swiper">
+                <div class="swiper-container galleryMain">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-container galleryThumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-2.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-3.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-4.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-5.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-6.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-7.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-8.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-9.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-10.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hr"></div>
+
+              <div class="accordionItem__text">
+                <h3>Мачистик</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nostrum quas quidem eum illo corporis consequuntur, molestias
+                  hic saepe consectetur voluptatum similique perferendis, odio
+                  officiis repellendus! Ab aut omnis cumque incidunt a, repellat
+                  recusandae aperiam!
+                </p>
+
+                <a href="#"> Посмотреть проект </a>
+              </div>
+              <div class="hr"></div>
+            </div>
+          </div>
+          <div class="accordionItem">
+            <button class="toggle accordionItemHeading">
+              <span class="primary-number">02.</span> рулетка
+            </button>
+            <div class="accordionItemContent">
+              <div class="accordionItem__swiper">
+                <div class="swiper-container galleryMain">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-container galleryThumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-2.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-3.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-4.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-5.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-6.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-7.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-8.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-9.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-10.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hr"></div>
+
+              <div class="accordionItem__text">
+                <h3>Мачистик</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nostrum quas quidem eum illo corporis consequuntur, molestias
+                  hic saepe consectetur voluptatum similique perferendis, odio
+                  officiis repellendus! Ab aut omnis cumque incidunt a, repellat
+                  recusandae aperiam!
+                </p>
+
+                <a href="#"> Посмотреть проект </a>
+              </div>
+              <div class="hr"></div>
+            </div>
+          </div>
+          <div class="accordionItem">
+            <button class="toggle accordionItemHeading">
+              <span class="primary-number">03.</span> рулетка
+            </button>
+            <div class="accordionItemContent">
+              <div class="accordionItem__swiper">
+                <div class="swiper-container galleryMain">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-container galleryThumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-2.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-3.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-4.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-5.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-6.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-7.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-8.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-9.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        data-src="https://swiperjs.com/demos/images/nature-10.jpg"
+                        class="swiper-lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hr"></div>
+
+              <div class="accordionItem__text">
+                <h3>Мачистик</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nostrum quas quidem eum illo corporis consequuntur, molestias
+                  hic saepe consectetur voluptatum similique perferendis, odio
+                  officiis repellendus! Ab aut omnis cumque incidunt a, repellat
+                  recusandae aperiam!
+                </p>
+
+                <a href="#"> Посмотреть проект </a>
+              </div>
+              <div class="hr"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END WORKS -->
+    <div class="hr" id="feedback"></div>
+    <!-- END HR -->
+    <section class="feedback">
+      <div class="container-fluid">
+        <div class="feedback__h">
+          <h2 class="primary-h wow animate__animated animate__fadeInUp">
+            отзывы
+          </h2>
+
+          <button class="primary-btn wow animate__animated animate__fadeInUp">
+            оставить отзыв <span class="dot"></span>
+          </button>
+        </div>
+
+        <div
+          class="
+            feedback__slider
+            swiper-container
+            wow
+            animate__animated animate__fadeInUp
+          "
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END FEEEDBAKC -->
+    <div class="hr" id="faq"></div>
+    <!-- END HR -->
+    <section class="faq">
+      <div class="container">
+        <div class="faq__h">
+          <h2 class="primary-h wow animate__animated animate__fadeInUp">
+            частые вопросы
+          </h2>
+
+          <button
+            class="
+              primary-btn
+              wow
+              animate__animated animate__fadeInUp animate__delay-1s
+            "
+          >
+            оставить отзыв <span class="dot"></span>
+          </button>
+        </div>
+
+        <div class="faq__box">
+          <div class="faq__box-left faq__box-component">
+            <div
+              class="
+                faq__box-item
+                wow
+                animate__animated animate__fadeInUp animate__delay-1s
+              "
+            >
+              <div class="faq__h2">
+                <h2>Подключаете ли вы аналитику?</h2>
+              </div>
+
+              <div class="faq__text">
+                <p>
+                  Да, я подключаю аналитику, и довольно часто это идёт подарком
+                  от меня. в основном это google analytics так как она более
+                  функциональнее, но так же умею и Яндекс метрику
+                </p>
+              </div>
+            </div>
+            <div
+              class="
+                faq__box-item
+                wow
+                animate__animated animate__fadeInUp animate__delay-2s
+              "
+            >
+              <div class="faq__h2">
+                <h2>Подключаете ли вы аналитику?</h2>
+              </div>
+
+              <div class="faq__text">
+                <p>
+                  Да, я подключаю аналитику, и довольно часто это идёт подарком
+                  от меня. в основном это google analytics так как она более
+                  функциональнее, но так же умею и Яндекс метрику
+                </p>
+              </div>
+            </div>
+            <div
+              class="
+                faq__box-item
+                wow
+                animate__animated animate__fadeInUp animate__delay-3s
+              "
+            >
+              <div class="faq__h2">
+                <h2>Подключаете ли вы аналитику?</h2>
+              </div>
+
+              <div class="faq__text">
+                <p>
+                  Да, я подключаю аналитику, и довольно часто это идёт подарком
+                  от меня. в основном это google analytics так как она более
+                  функциональнее, но так же умею и Яндекс метрику
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__box-center faq__box-component">
+            <div class="faq__box-item wow animate__animated animate__fadeInUp">
+              <div class="faq__h2">
+                <h2>Подключаете ли вы аналитику?</h2>
+              </div>
+
+              <div class="faq__text">
+                <p>
+                  Да, я подключаю аналитику, и довольно часто это идёт подарком
+                  от меня. в основном это google analytics так как она более
+                  функциональнее, но так же умею и Яндекс метрику
+                </p>
+              </div>
+            </div>
+            <div
+              class="
+                faq__box-item
+                wow
+                animate__animated animate__fadeInUp animate__delay-1s
+              "
+            >
+              <div class="faq__h2">
+                <h2>Подключаете ли вы аналитику?</h2>
+              </div>
+
+              <div class="faq__text">
+                <p>
+                  Да, я подключаю аналитику, и довольно часто это идёт подарком
+                  от меня. в основном это google analytics так как она более
+                  функциональнее, но так же умею и Яндекс метрику
+                </p>
+              </div>
+            </div>
+            <div
+              class="
+                faq__box-item
+                wow
+                animate__animated animate__fadeInUp animate__delay-2s
+              "
+            >
+              <div class="faq__h2">
+                <h2>Подключаете ли вы аналитику?</h2>
+              </div>
+
+              <div class="faq__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus aperiam saepe praesentium quod laborum a corporis
+                  neque aut eos. Fuga sequi nesciunt eligendi adipisci! Pariatur
+                  earum cumque cupiditate adipisci error molestias aliquam
+                  assumenda perspiciatis cum sit. Nisi ut obcaecati distinctio
+                  libero praesentium animi odio nobis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__box-right faq__box-component">
+            <div
+              class="
+                faq__box-item
+                wow
+                animate__animated animate__fadeInUp animate__delay-1s
+              "
+            >
+              <div class="faq__h2">
+                <h2>Подключаете ли вы аналитику?</h2>
+              </div>
+
+              <div class="faq__text">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Architecto quo sit, reprehenderit porro sed illo.
+                </p>
+              </div>
+            </div>
+            <div
+              class="
+                faq__box-item
+                wow
+                animate__animated animate__fadeInUp animate__delay-2s
+              "
+            >
+              <div class="faq__h2">
+                <h2>Подключаете ли вы аналитику?</h2>
+              </div>
+
+              <div class="faq__text">
+                <p>
+                  Да, я подключаю аналитику, и довольно часто это идёт подарком
+                  от меня. в основном это google analytics так как она более
+                  функциональнее, но так же умею и Яндекс метрику
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END FAQ -->
+    <div class="hr" id="service"></div>
+    <!-- END HR -->
+    <section class="service">
+      <div class="container">
+        <div class="service__h">
+          <h2 class="primary-h wow animate__animated animate__fadeInUp">
+            услуги
+          </h2>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="swiper-container service__box">
+          <div class="swiper-wrapper">
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp animate__delay-1s
+              "
+            >
+              <div class="service__slide-before">.</div>
+              <div class="service__slide-content">
+                <h3>комплексная разработка</h3>
+                <button class="service__btn" type="submit">
+                  подробнее
+                  <span class="dot"></span>
+                </button>
+              </div>
+
+              <div class="service__slide-textBG">
+                <span
+                  >креативный дизайн креативный дизайн креативный дизайн</span
+                >
+                <span
+                  >креативный дизайн креативный дизайн креативный дизайн</span
+                >
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp animate__delay-2s
+              "
+            >
+              <div class="service__slide-before">.</div>
+              <div class="service__slide-content">
+                <h3>комплексная разработка</h3>
+                <button class="service__btn" type="submit">
+                  подробнее
+                  <span class="dot"></span>
+                </button>
+              </div>
+
+              <div class="service__slide-textBG">
+                <span
+                  >креативный дизайн креативный дизайн креативный дизайн</span
+                >
+                <span
+                  >креативный дизайн креативный дизайн креативный дизайн</span
+                >
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp animate__delay-3s
+              "
+            >
+              <div class="service__slide-before">.</div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp animate__delay-4s
+              "
+            >
+              <div class="service__slide-before">.</div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp animate__delay-5s
+              "
+            >
+              <div class="service__slide-before">.</div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp
+                custom-animate__delay-6s
+              "
+            >
+              <div class="service__slide-before">.</div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp
+                custom-animate__delay-7s
+              "
+            >
+              <div class="service__slide-before">.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SERVICE -->
+    <div class="hr" id="form"></div>
+    <!-- END HR -->
+    <section class="form">
+      <div class="container">
+        <div class="form__h">
+          <h2 class="primary-h">оставить заявку</h2>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="form__box">
+          <div class="form__box-left form__left">
+            <div class="form__left-h">
+              <h2 class="primary-h">поработаем?</h2>
+            </div>
+            <div class="form__left-text">
+              <p>
+                если ваш ответ да — то вам нужно заполнить бриф ниже. как только
+                вы это сделаете я свяжусь с вами.
+              </p>
+              <button class="service__btn" id="footer__primary-btn">
+                связаться со мной
+              </button>
+            </div>
+            <div
+              class="form__left-before"
+              data-tilt
+              data-tilt-scale="1.1"
+              data-tilt-startX="280"
+              data-tilt-startY="360"
+            >
+              .
+            </div>
+          </div>
+          <div class="form__box-center form__center">
+            <p class="form__center-text">
+              оставить заявку оставить заявку оставить заявку оставить заявку
+              оставить заявку оставить заявку
+            </p>
+            <p class="form__center-text">
+              оставить заявку оставить заявку оставить заявку оставить заявку
+              оставить заявку оставить заявку
+            </p>
+          </div>
+          <div class="form__box-right form__right">
+            <img src="./img/my__photo.png" alt="my__photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END FORM -->
+    <section class="form__modal hide">
+      <div class="container">
+        <div class="header__modal-content">
+          <div class="header__modal-text">
+            <h3>
+              <a
+                href=""
+                class="typewrite"
+                data-period="4000"
+                data-type='[ "Оставить заявку.", "Связаться со мной."]'
+              >
+                <span class="wrap"></span>
+              </a>
+            </h3>
+
+            <p>
+              чтобы оставить заявку, нужно пройти по ссылке ниже. Так вы
+              попадёте на гугл форму, где собственно нужно ответить на вопросы.
+              После того как вы ответите на вопросы, я вам напишу
+            </p>
+
+            <button class="service__btn">
+              <a href="#">заполнить форму <span class="dot"></span></a>
+            </button>
+          </div>
+          <div class="header__modal-img">
+            <img src="./img/project.png" alt="project" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__copywrite"><h4>created in 2021</h4></div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-name">
+            <h4>Bortnitskiy Alex</h4>
+          </div>
+          <div class="footer__contacts-link">
+            <a
+              href="mailto:alex.bortnitskiy@gmail.com?subject=Portfolio%20email!"
+              class="footer__contacts-email"
+              >alex.bortnitskiy@gmail.com</a
+            >
+            <a href="tel:380987584511" class="footer__contacts-phone"
+              >380987584511</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./js/scripts.min.js"></script>
+  </body>
+</html>
