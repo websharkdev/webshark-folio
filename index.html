@@ -14,10 +14,39 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", (e) => {
+        console.log("Welcome to WebShark.folio");
+        const loader = document.querySelector("#loadWrapper");
+        loader.classList.add("hide");
+      });
+    </script>
     <title>webshark folio</title>
   </head>
 
   <body>
+    <!-- PRELOADER -->
+    <div class="loader-wrapper" id="loadWrapper">
+      <div class="loader-gif" id="gitLoad">
+        <img src="./img/loader.svg" alt="loader-gif" />
+      </div>
+      <div class="loader-text">
+        <h5>
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='[ "Контент загружается.", "Создание вкусных сайтов.", "Сайты запрещены диабетикам."]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </h5>
+      </div>
+    </div>
+
+    <!-- PRELOADER -->
+
+    <!-- CURSOR -->
     <div class="cursor-dot-outline">.</div>
     <div class="cursor-dot">.</div>
 
@@ -74,7 +103,7 @@
               href=""
               class="typewrite"
               data-period="4000"
-              data-type='[ "Веб разработка «под ключ».", "Создание вкусных сайтов."]'
+              data-type='[ "Веб разработка «под ключ».", "Создание вкусных сайтов.", "Сайты запрещены диабетикам."]'
             >
               <span class="wrap"></span>
             </a>
@@ -116,7 +145,10 @@
             </p>
 
             <button class="service__btn">
-              <a href="#">заполнить форму <span class="dot"></span></a>
+              <a href="#"
+                ><div>заполнить форму</div>
+                <span class="dot"></span
+              ></a>
             </button>
           </div>
           <div class="header__modal-img">
@@ -955,6 +987,90 @@
 
               <div class="service__slide-textBG">
                 <span
+                  >комплексная разработка комплексная разработка комплексная
+                  разработка</span
+                >
+                <span
+                  >комплексная разработка комплексная разработка комплексная
+                  разработка</span
+                >
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp animate__delay-1s
+              "
+            >
+              <div class="service__slide-before">.</div>
+              <div class="service__slide-content">
+                <h3>комплексная разработка</h3>
+                <button class="service__btn" type="submit">
+                  подробнее
+                  <span class="dot"></span>
+                </button>
+              </div>
+
+              <div class="service__slide-textBG">
+                <span
+                  >комплексная разработка комплексная разработка комплексная
+                  разработка</span
+                >
+                <span
+                  >комплексная разработка комплексная разработка комплексная
+                  разработка</span
+                >
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp animate__delay-1s
+              "
+            >
+              <div class="service__slide-before">.</div>
+              <div class="service__slide-content">
+                <h3>комплексная разработка</h3>
+                <button class="service__btn" type="submit">
+                  подробнее
+                  <span class="dot"></span>
+                </button>
+              </div>
+
+              <div class="service__slide-textBG">
+                <span
+                  >комплексная разработка комплексная разработка комплексная
+                  разработка</span
+                >
+                <span
+                  >комплексная разработка комплексная разработка комплексная
+                  разработка</span
+                >
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp animate__delay-1s
+              "
+            >
+              <div class="service__slide-before">.</div>
+              <div class="service__slide-content">
+                <h3>креативный дизайн</h3>
+                <button class="service__btn" type="submit">
+                  подробнее
+                  <span class="dot"></span>
+                </button>
+              </div>
+
+              <div class="service__slide-textBG">
+                <span
                   >креативный дизайн креативный дизайн креативный дизайн</span
                 >
                 <span
@@ -967,7 +1083,35 @@
                 swiper-slide
                 service__slide
                 wow
-                animate__animated animate__fadeInUp animate__delay-2s
+                animate__animated animate__fadeInUp animate__delay-1s
+              "
+            >
+              <div class="service__slide-before">.</div>
+              <div class="service__slide-content">
+                <h3>разработка готового дизайна</h3>
+                <button class="service__btn" type="submit">
+                  подробнее
+                  <span class="dot"></span>
+                </button>
+              </div>
+
+              <div class="service__slide-textBG">
+                <span
+                  >разработка готового дизайна разработка готового дизайна
+                  разработка готового дизайна</span
+                >
+                <span
+                  >разработка готового дизайна разработка готового дизайна
+                  разработка готового дизайна</span
+                >
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                service__slide
+                wow
+                animate__animated animate__fadeInUp animate__delay-1s
               "
             >
               <div class="service__slide-before">.</div>
@@ -993,58 +1137,98 @@
                 swiper-slide
                 service__slide
                 wow
-                animate__animated animate__fadeInUp animate__delay-3s
+                animate__animated animate__fadeInUp animate__delay-1s
               "
             >
               <div class="service__slide-before">.</div>
+              <div class="service__slide-content">
+                <h3>комплексная разработка</h3>
+                <button class="service__btn" type="submit">
+                  подробнее
+                  <span class="dot"></span>
+                </button>
+              </div>
+
+              <div class="service__slide-textBG">
+                <span
+                  >креативный дизайн креативный дизайн креативный дизайн</span
+                >
+                <span
+                  >креативный дизайн креативный дизайн креативный дизайн</span
+                >
+              </div>
             </div>
             <div
               class="
                 swiper-slide
                 service__slide
                 wow
-                animate__animated animate__fadeInUp animate__delay-4s
+                animate__animated animate__fadeInUp animate__delay-1s
               "
             >
               <div class="service__slide-before">.</div>
-            </div>
-            <div
-              class="
-                swiper-slide
-                service__slide
-                wow
-                animate__animated animate__fadeInUp animate__delay-5s
-              "
-            >
-              <div class="service__slide-before">.</div>
-            </div>
-            <div
-              class="
-                swiper-slide
-                service__slide
-                wow
-                animate__animated animate__fadeInUp
-                custom-animate__delay-6s
-              "
-            >
-              <div class="service__slide-before">.</div>
-            </div>
-            <div
-              class="
-                swiper-slide
-                service__slide
-                wow
-                animate__animated animate__fadeInUp
-                custom-animate__delay-7s
-              "
-            >
-              <div class="service__slide-before">.</div>
+              <div class="service__slide-content">
+                <h3>комплексная разработка</h3>
+                <button class="service__btn" type="submit">
+                  подробнее
+                  <span class="dot"></span>
+                </button>
+              </div>
+
+              <div class="service__slide-textBG">
+                <span
+                  >креативный дизайн креативный дизайн креативный дизайн</span
+                >
+                <span
+                  >креативный дизайн креативный дизайн креативный дизайн</span
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- END SERVICE -->
+
+    <div class="service__modal hide">
+      <div class="container">
+        <div class="service__modal-box">
+          <div class="service__modal-h">
+            <h4 id="service__modal-h"></h4>
+          </div>
+          <div class="service__modal-tabs accordionWrapper">
+            <div class="accordionItem serviceAccItem">
+              <button class="toggle accordionItemHeading">
+                <span id="service__modal-tabsItemTitle"></span>
+              </button>
+              <div class="accordionItemContent">
+                <p id="service__modal-tabsItemText"></p>
+              </div>
+            </div>
+            <div class="accordionItem serviceAccItem">
+              <button class="toggle accordionItemHeading">
+                <span id="service__modal-tabsItemTitle"></span>
+              </button>
+              <div class="accordionItemContent">
+                <p id="service__modal-tabsItemText"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service__modal-btn">
+            <a href="#" class="primary-btn">
+              <div>заполнить форму</div>
+              <span class="dot"></span>
+            </a>
+          </div>
+        </div>
+        <div class="service__modal-img">
+          <img src="./img/project.png" alt="project photo" />
+        </div>
+      </div>
+    </div>
+
+    <!-- END SERVICE MODAL -->
     <div class="hr" id="form"></div>
     <!-- END HR -->
     <section class="form">
@@ -1128,7 +1312,10 @@
             </p>
 
             <button class="service__btn">
-              <a href="#">заполнить форму <span class="dot"></span></a>
+              <a href="#"
+                ><div>заполнить форму</div>
+                <span class="dot"></span
+              ></a>
             </button>
           </div>
           <div class="header__modal-img">
@@ -1139,7 +1326,9 @@
     </section>
     <footer class="footer">
       <div class="container">
-        <div class="footer__copywrite"><h4>created in 2021</h4></div>
+        <div class="footer__copywrite">
+          <h4>created in 2021</h4>
+        </div>
         <div class="footer__contacts">
           <div class="footer__contacts-name">
             <h4>Bortnitskiy Alex</h4>
