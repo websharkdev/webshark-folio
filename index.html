@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <script>
       document.addEventListener("DOMContentLoaded", (e) => {
-        console.log("Welcome to WebShark.folio");
+        console.log("Добро пожалывать 🦈 WebShark.folio 🦈");
         const loader = document.querySelector("#loadWrapper");
         loader.classList.add("hide");
       });
@@ -28,7 +28,12 @@
     <!-- PRELOADER -->
     <div class="loader-wrapper" id="loadWrapper">
       <div class="loader-gif" id="gitLoad">
-        <img src="./img/loader.svg" alt="loader-gif" />
+        <img
+          class="lazyload"
+          data-src="./img/loader.svg"
+          src="./img/loader.svg"
+          alt="loader-gif"
+        />
       </div>
       <div class="loader-text">
         <h5>
@@ -61,8 +66,10 @@
             animate__animated animate__fadeInDown animate__delay-1s
           "
         >
-          <a href="#">меню</a>
-          <a href="#" class="name">Bortnitskiy Alex</a>
+          <button id="headerMenu">меню</button>
+          <a href="https://www.instagram.com/webshark.dev/" class="name"
+            >Bortnitskiy Alex</a
+          >
         </div>
         <div class="header__top">
           <!-- end header__menu -->
@@ -102,8 +109,8 @@
             <a
               href=""
               class="typewrite"
-              data-period="4000"
-              data-type='[ "Веб разработка «под ключ».", "Создание вкусных сайтов.", "Сайты запрещены диабетикам."]'
+              data-period="6000"
+              data-type='[ "Веб разработка «под ключ».", "Создание вкусных сайтов.", "pro — создание сайтов."]'
             >
               <span class="wrap"></span>
             </a>
@@ -121,6 +128,40 @@
     </header>
     <!-- END HEADER -->
 
+    <!-- HEADER MENU -->
+    <div class="header__menuModal hide">
+      <div class="header__menuModal-wrapper">
+        <ul class="header__menuModal-items">
+          <li class="active">
+            <a href="#header">Домашняя</a>
+          </li>
+          <li>
+            <a href="#about">про меня</a>
+          </li>
+          <li>
+            <a href="#works">работы</a>
+          </li>
+          <li>
+            <a href="#feedbakc">отзывы</a>
+          </li>
+          <li>
+            <a href="#form">Контакты</a>
+          </li>
+        </ul>
+        <div class="header__menuModal-contacts">
+          <a href="mailto:alex.bortnitskiy@gmail.com?subject=Portfolio%20email!"
+            >alex.bortnitskiy@gmail.com</a
+          >
+          <a href="tel:380987584311">380 (98) 758 43 11</a>
+
+          <div class="header__menuModal-media">
+            <a href="https://t.me/websharkdev">telegram</a>
+            <a href="https://www.instagram.com/webshark.dev/">instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- HEADER MODAL -->
 
     <section class="header__modal hide">
@@ -131,7 +172,7 @@
               <a
                 href=""
                 class="typewrite"
-                data-period="4000"
+                data-period="6000"
                 data-type='[ "Оставить заявку.", "Связаться со мной."]'
               >
                 <span class="wrap"></span>
@@ -145,14 +186,20 @@
             </p>
 
             <button class="service__btn">
-              <a href="#"
+              <a
+                href="https://docs.google.com/forms/d/1JSP-7YmVkimc5ihcEhujuzmZFixO_ScBE3JtoQNKnVA/edit?usp=sharing"
                 ><div>заполнить форму</div>
                 <span class="dot"></span
               ></a>
             </button>
           </div>
           <div class="header__modal-img">
-            <img src="./img/project.png" alt="project" />
+            <img
+              class="lazyload"
+              data-src="./img/project.png"
+              src="./img/project.png"
+              alt="project"
+            />
           </div>
         </div>
       </div>
@@ -182,7 +229,12 @@
           <div
             class="about__content-img wow animate__animated animate__fadeInUp"
           >
-            <img src="./img/my__photo.png" alt="my photo" />
+            <img
+              class="lazyload"
+              data-src="./img/my__photo.png"
+              src="./img/my__photo.png"
+              alt="my photo"
+            />
           </div>
         </div>
       </div>
@@ -201,7 +253,7 @@
         <div class="works__accordion works__accordion-short accordionWrapper">
           <div class="accordionItem">
             <button class="toggle accordionItemHeading">
-              <span class="primary-number">01.</span> рулетка
+              <span class="primary-number">01.</span> Гост-теплица
             </button>
             <div class="accordionItemContent">
               <div class="accordionItem__swiper">
@@ -210,7 +262,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 1-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -218,7 +271,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 3-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -226,7 +280,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 2-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -234,7 +289,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 4-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -242,7 +298,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 5-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -250,7 +307,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 6-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -258,7 +316,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 7-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -266,22 +325,7 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
-                          class="swiper-lazy"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
-                          class="swiper-lazy"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img
+                          class="lazyload"
                           data-src="https://swiperjs.com/demos/images/nature-1.jpg"
                           class="swiper-lazy"
                         />
@@ -292,64 +336,76 @@
                 <div class="swiper-container galleryThumbs">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-1.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 1-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-2.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 3-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-3.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 2-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-4.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 4-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-5.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 5-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-6.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 6-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-7.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/greenhouse/image 7-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-8.jpg"
-                        class="swiper-lazy"
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-9.jpg"
-                        class="swiper-lazy"
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-10.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -358,24 +414,26 @@
               <div class="hr"></div>
 
               <div class="accordionItem__text">
-                <h3>Мачистик</h3>
+                <h3>Гост-теплица</h3>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nostrum quas quidem eum illo corporis consequuntur, molestias
-                  hic saepe consectetur voluptatum similique perferendis, odio
-                  officiis repellendus! Ab aut omnis cumque incidunt a, repellat
-                  recusandae aperiam!
+                  Одина из последних моих работ. Задача была такая — сверстать
+                  проект по готовому дизайну, с тем фактом что проект позже
+                  будет натягиваться на ВордПресс. В проекте 4 страницы (
+                  главная, страница гарантии, каталог и карточка товара)
                 </p>
 
-                <a href="#"> Посмотреть проект </a>
+                <a href="https://websharkdev.github.io/greenhouse-oleg/">
+                  Посмотреть проект
+                </a>
               </div>
               <div class="hr"></div>
             </div>
           </div>
           <div class="accordionItem">
             <button class="toggle accordionItemHeading">
-              <span class="primary-number">02.</span> рулетка
+              <span class="primary-number">02.</span> cs go рулетка
             </button>
+
             <div class="accordionItemContent">
               <div class="accordionItem__swiper">
                 <div class="swiper-container galleryMain">
@@ -383,7 +441,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 1.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -391,7 +450,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 2.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -399,7 +459,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 3.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -407,7 +468,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 4.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -415,7 +477,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 5.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -423,7 +486,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 6.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -431,7 +495,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 7.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -439,7 +504,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 8.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -447,14 +513,7 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
-                          class="swiper-lazy"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img
+                          class="lazyload"
                           data-src="https://swiperjs.com/demos/images/nature-1.jpg"
                           class="swiper-lazy"
                         />
@@ -465,64 +524,85 @@
                 <div class="swiper-container galleryThumbs">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-1.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 1.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-2.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 2.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-3.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 3.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-4.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 4.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-5.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 5.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-6.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 6.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-7.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 7.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-8.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/csgoshark/image 8.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-9.jpg"
-                        class="swiper-lazy"
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-10.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -531,24 +611,24 @@
               <div class="hr"></div>
 
               <div class="accordionItem__text">
-                <h3>Мачистик</h3>
+                <h3>CS Go рулетка</h3>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nostrum quas quidem eum illo corporis consequuntur, molestias
-                  hic saepe consectetur voluptatum similique perferendis, odio
-                  officiis repellendus! Ab aut omnis cumque incidunt a, repellat
-                  recusandae aperiam!
+                  Большой сайт, который включает в себя более 10 страниц. Это
+                  был самый большой сайт по сегодняшний день.
                 </p>
 
-                <a href="#"> Посмотреть проект </a>
+                <a href="https://websharkdev.github.io/tsoy_studio/">
+                  Посмотреть проект
+                </a>
               </div>
               <div class="hr"></div>
             </div>
           </div>
           <div class="accordionItem">
             <button class="toggle accordionItemHeading">
-              <span class="primary-number">03.</span> рулетка
+              <span class="primary-number">03.</span> digital-agency
             </button>
+
             <div class="accordionItemContent">
               <div class="accordionItem__swiper">
                 <div class="swiper-container galleryMain">
@@ -556,7 +636,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 1-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -564,7 +645,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 2-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -572,7 +654,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 3-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -580,7 +663,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 4-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -588,7 +672,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 5-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -596,7 +681,8 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 6-min.png"
                           class="swiper-lazy"
                         />
                       </div>
@@ -604,30 +690,7 @@
                     <div class="swiper-slide">
                       <div class="swiper-zoom-container">
                         <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
-                          class="swiper-lazy"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
-                          class="swiper-lazy"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img
-                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
-                          class="swiper-lazy"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-zoom-container">
-                        <img
+                          class="lazyload"
                           data-src="https://swiperjs.com/demos/images/nature-1.jpg"
                           class="swiper-lazy"
                         />
@@ -638,64 +701,67 @@
                 <div class="swiper-container galleryThumbs">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-1.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 1-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-2.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 2-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-3.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 3-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-4.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 4-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-5.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 5-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-6.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/tsoy/image 6-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-7.jpg"
-                        class="swiper-lazy"
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-8.jpg"
-                        class="swiper-lazy"
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-9.jpg"
-                        class="swiper-lazy"
-                      />
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        data-src="https://swiperjs.com/demos/images/nature-10.jpg"
-                        class="swiper-lazy"
-                      />
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -704,16 +770,303 @@
               <div class="hr"></div>
 
               <div class="accordionItem__text">
-                <h3>Мачистик</h3>
+                <h3>tsoy digital agency</h3>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nostrum quas quidem eum illo corporis consequuntur, molestias
-                  hic saepe consectetur voluptatum similique perferendis, odio
-                  officiis repellendus! Ab aut omnis cumque incidunt a, repellat
-                  recusandae aperiam!
+                  Очень простой, и приятный сайт сделаный для digital агенства,
+                  занимающийся разработкой сайтов. Особенностю этого проекта
+                  было то, что клиент попросил настроить отправку формы в
+                  телеграм.
                 </p>
 
-                <a href="#"> Посмотреть проект </a>
+                <a href="https://websharkdev.github.io/tsoy_studio/">
+                  Посмотреть проект
+                </a>
+              </div>
+              <div class="hr"></div>
+            </div>
+          </div>
+          <div class="accordionItem">
+            <button class="toggle accordionItemHeading">
+              <span class="primary-number">04.</span> антизастройщик
+            </button>
+            <div class="accordionItemContent">
+              <div class="accordionItem__swiper">
+                <div class="swiper-container galleryMain">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 1-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 2-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 3-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 4-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 5-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 6-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 7-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 8-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 9-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 10-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 11-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 12-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 13-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-container galleryThumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 1-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 2-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 3-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 4-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 5-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 6-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 7-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 8-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 9-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 10-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 11-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 12-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="./img/projects__photo/legicom/image 13-min.png"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-zoom-container">
+                        <img
+                          class="lazyload"
+                          data-src="https://swiperjs.com/demos/images/nature-1.jpg"
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hr"></div>
+
+              <div class="accordionItem__text">
+                <h3>антизастройщик</h3>
+                <p>
+                  Красивый, чистый и приятный проект. Сделал я его для
+                  постоянного клиента. Сайт включает в себя много блоков, что
+                  делает его легким, и простым.
+                </p>
+
+                <a href="https://websharkdev.github.io/Legicom/">
+                  Посмотреть проект
+                </a>
               </div>
               <div class="hr"></div>
             </div>
@@ -731,9 +1084,9 @@
             отзывы
           </h2>
 
-          <button class="primary-btn wow animate__animated animate__fadeInUp">
+          <!-- <button class="primary-btn wow animate__animated animate__fadeInUp">
             оставить отзыв <span class="dot"></span>
-          </button>
+          </button> -->
         </div>
 
         <div
@@ -745,15 +1098,13 @@
           "
         >
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">
+              <img src="./img/feedback/freedback_1.png" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/feedback/freedback_2.png" alt="feedback" />
+            </div>
+            <div class="swiper-slide">место для твоего отзыва</div>
           </div>
         </div>
       </div>
@@ -768,7 +1119,7 @@
             частые вопросы
           </h2>
 
-          <button
+          <!-- <button
             class="
               primary-btn
               wow
@@ -776,7 +1127,7 @@
             "
           >
             оставить отзыв <span class="dot"></span>
-          </button>
+          </button> -->
         </div>
 
         <div class="faq__box">
@@ -807,14 +1158,23 @@
             "
           >
             <div class="faq__h2">
-              <h2>Подключаете ли вы аналитику?</h2>
+              <h2>сколько стоит?</h2>
             </div>
 
             <div class="faq__text">
               <p>
-                Да, я подключаю аналитику, и довольно часто это идёт подарком от
-                меня. в основном это google analytics так как она более
-                функциональнее, но так же умею и Яндекс метрику
+                Всё очень и очень по разному. Может быть такое что цена будет
+                $300, а может быть что и $1.500. Если это одностраничный или
+                многостраничный сайт, то для этого подходит данная таблица. Но
+                имейте ввиду что это всё равно не точно!
+
+                <br />
+                <br />
+                таблица
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1Qpoz6SK_BPvFGrMmDpQ4Q0FpY1jVBpJUUrBW5amXhJo/edit?usp=sharing"
+                  >тут</a
+                >
               </p>
             </div>
           </div>
@@ -826,14 +1186,14 @@
             "
           >
             <div class="faq__h2">
-              <h2>Подключаете ли вы аналитику?</h2>
+              <h2>всё слишком радужно!</h2>
             </div>
 
             <div class="faq__text">
               <p>
-                Да, я подключаю аналитику, и довольно часто это идёт подарком от
-                меня. в основном это google analytics так как она более
-                функциональнее, но так же умею и Яндекс метрику
+                Нет, это не так. К сожалению у меня есть и плохие отзывы... Да,
+                это так. Но я и вы должны понимать что без провалов и неудач, в
+                нашей жизни никуда!
               </p>
             </div>
           </div>
@@ -847,27 +1207,31 @@
             "
           >
             <div class="faq__h2">
-              <h2>Подключаете ли вы аналитику?</h2>
+              <h2>разработка на wordpress</h2>
             </div>
 
             <div class="faq__text">
               <p>
-                Да, я подключаю аналитику, и довольно часто это идёт подарком от
-                меня. в основном это google analytics так как она более
-                функциональнее, но так же умею и Яндекс метрику
+                на wordpress разрабатывать умеею, так же умею делать интернет
+                магазины ( woocommerce ). Опыт есть, к сожалению показывать не
+                могу :(
+                <br />
+                <br />
+                По поводу цены => пишите в личные сообщения
               </p>
             </div>
           </div>
           <div class="faq__box-item wow animate__animated animate__fadeInUp">
             <div class="faq__h2">
-              <h2>Подключаете ли вы аналитику?</h2>
+              <h2>не "кинете" ли меня?</h2>
             </div>
 
             <div class="faq__text">
               <p>
-                Да, я подключаю аналитику, и довольно часто это идёт подарком от
-                меня. в основном это google analytics так как она более
-                функциональнее, но так же умею и Яндекс метрику
+                Конечно же нет! Мне нету смысла портить репутацию разработчика,
+                да и в целом человека. Я показываю и рассказываю всё в своем
+                блоге, и люди видят какой я человек. По этому мне самому не
+                хочется "гробить" их доверие!
               </p>
             </div>
           </div>
@@ -879,14 +1243,22 @@
             "
           >
             <div class="faq__h2">
-              <h2>Подключаете ли вы аналитику?</h2>
+              <h2>как происходит полная "сборка" сайта?</h2>
             </div>
 
             <div class="faq__text">
               <p>
-                Да, я подключаю аналитику, и довольно часто это идёт подарком от
-                меня. в основном это google analytics так как она более
-                функциональнее, но так же умею и Яндекс метрику
+                Это довольно сложный и длинный процесс. Всё начинается с вашего
+                Технического Задания... У меня даже есть специальная карта,
+                которая отображает все моменты.
+                <br />
+                <br />
+
+                Посмотреть эту карту можно
+                <a
+                  href="https://www.figma.com/file/CnpxZDSrprMMhp7OKPxANt/%D0%9A%D0%B0%D1%80%D1%82%D0%B0-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F-%D1%81%D0%B0%D0%B9%D1%82%D0%B0?node-id=0%3A1"
+                  >тут</a
+                >
               </p>
             </div>
           </div>
@@ -898,17 +1270,15 @@
             "
           >
             <div class="faq__h2">
-              <h2>Подключаете ли вы аналитику?</h2>
+              <h2>предоплата. Как быть с ней?</h2>
             </div>
 
             <div class="faq__text">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus aperiam saepe praesentium quod laborum a corporis
-                neque aut eos. Fuga sequi nesciunt eligendi adipisci! Pariatur
-                earum cumque cupiditate adipisci error molestias aliquam
-                assumenda perspiciatis cum sit. Nisi ut obcaecati distinctio
-                libero praesentium animi odio nobis.
+                Я работаю только по предоплате (40%) в начале, и остальные 60
+                после сдачи... Я вас ни к чему не обязываю, можно рабоать через
+                гарант сервис, или через фриланс биржу. ! Но ! оплачиваете
+                процент вы.
               </p>
             </div>
           </div>
@@ -921,13 +1291,14 @@
             "
           >
             <div class="faq__h2">
-              <h2>Подключаете ли вы аналитику?</h2>
+              <h2>как оплачивать?</h2>
             </div>
 
             <div class="faq__text">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto quo sit, reprehenderit porro sed illo.
+                есть много вариантов, но основных два — карта киви, и карта
+                приватбанка (укр банк). Так же можно на яндекс, payeer и прочие,
+                но у них большая коммисия, что мне не нравится
               </p>
             </div>
           </div>
@@ -939,14 +1310,15 @@
             "
           >
             <div class="faq__h2">
-              <h2>Подключаете ли вы аналитику?</h2>
+              <h2>почему не на конструкторе?</h2>
             </div>
 
             <div class="faq__text">
               <p>
-                Да, я подключаю аналитику, и довольно часто это идёт подарком от
-                меня. в основном это google analytics так как она более
-                функциональнее, но так же умею и Яндекс метрику
+                Это больная тема для каждого разработчика. Ответ простой —
+                конструктор никогда не сможет сделать что-то не стандартное. Так
+                же конструктор выдает ужасный код, который не оптимизирован, и
+                из-за которого сайт скорее всего будет медленно загружаться
               </p>
             </div>
           </div>
@@ -976,7 +1348,6 @@
                 animate__animated animate__fadeInUp animate__delay-1s
               "
             >
-              <div class="service__slide-before">.</div>
               <div class="service__slide-content">
                 <h3>комплексная разработка</h3>
                 <button class="service__btn" type="submit">
@@ -1004,9 +1375,8 @@
                 animate__animated animate__fadeInUp animate__delay-1s
               "
             >
-              <div class="service__slide-before">.</div>
               <div class="service__slide-content">
-                <h3>комплексная разработка</h3>
+                <h3>вёрстка готового дизайна</h3>
                 <button class="service__btn" type="submit">
                   подробнее
                   <span class="dot"></span>
@@ -1014,14 +1384,8 @@
               </div>
 
               <div class="service__slide-textBG">
-                <span
-                  >комплексная разработка комплексная разработка комплексная
-                  разработка</span
-                >
-                <span
-                  >комплексная разработка комплексная разработка комплексная
-                  разработка</span
-                >
+                <span>вёрстка дизайна вёрстка дизайна вёрстка дизайна</span>
+                <span>вёрстка дизайна вёрстка дизайна вёрстка дизайна</span>
               </div>
             </div>
             <div
@@ -1032,35 +1396,6 @@
                 animate__animated animate__fadeInUp animate__delay-1s
               "
             >
-              <div class="service__slide-before">.</div>
-              <div class="service__slide-content">
-                <h3>комплексная разработка</h3>
-                <button class="service__btn" type="submit">
-                  подробнее
-                  <span class="dot"></span>
-                </button>
-              </div>
-
-              <div class="service__slide-textBG">
-                <span
-                  >комплексная разработка комплексная разработка комплексная
-                  разработка</span
-                >
-                <span
-                  >комплексная разработка комплексная разработка комплексная
-                  разработка</span
-                >
-              </div>
-            </div>
-            <div
-              class="
-                swiper-slide
-                service__slide
-                wow
-                animate__animated animate__fadeInUp animate__delay-1s
-              "
-            >
-              <div class="service__slide-before">.</div>
               <div class="service__slide-content">
                 <h3>креативный дизайн</h3>
                 <button class="service__btn" type="submit">
@@ -1086,9 +1421,8 @@
                 animate__animated animate__fadeInUp animate__delay-1s
               "
             >
-              <div class="service__slide-before">.</div>
               <div class="service__slide-content">
-                <h3>разработка готового дизайна</h3>
+                <h3>Создание Notion базы</h3>
                 <button class="service__btn" type="submit">
                   подробнее
                   <span class="dot"></span>
@@ -1096,92 +1430,8 @@
               </div>
 
               <div class="service__slide-textBG">
-                <span
-                  >разработка готового дизайна разработка готового дизайна
-                  разработка готового дизайна</span
-                >
-                <span
-                  >разработка готового дизайна разработка готового дизайна
-                  разработка готового дизайна</span
-                >
-              </div>
-            </div>
-            <div
-              class="
-                swiper-slide
-                service__slide
-                wow
-                animate__animated animate__fadeInUp animate__delay-1s
-              "
-            >
-              <div class="service__slide-before">.</div>
-              <div class="service__slide-content">
-                <h3>комплексная разработка</h3>
-                <button class="service__btn" type="submit">
-                  подробнее
-                  <span class="dot"></span>
-                </button>
-              </div>
-
-              <div class="service__slide-textBG">
-                <span
-                  >креативный дизайн креативный дизайн креативный дизайн</span
-                >
-                <span
-                  >креативный дизайн креативный дизайн креативный дизайн</span
-                >
-              </div>
-            </div>
-            <div
-              class="
-                swiper-slide
-                service__slide
-                wow
-                animate__animated animate__fadeInUp animate__delay-1s
-              "
-            >
-              <div class="service__slide-before">.</div>
-              <div class="service__slide-content">
-                <h3>комплексная разработка</h3>
-                <button class="service__btn" type="submit">
-                  подробнее
-                  <span class="dot"></span>
-                </button>
-              </div>
-
-              <div class="service__slide-textBG">
-                <span
-                  >креативный дизайн креативный дизайн креативный дизайн</span
-                >
-                <span
-                  >креативный дизайн креативный дизайн креативный дизайн</span
-                >
-              </div>
-            </div>
-            <div
-              class="
-                swiper-slide
-                service__slide
-                wow
-                animate__animated animate__fadeInUp animate__delay-1s
-              "
-            >
-              <div class="service__slide-before">.</div>
-              <div class="service__slide-content">
-                <h3>комплексная разработка</h3>
-                <button class="service__btn" type="submit">
-                  подробнее
-                  <span class="dot"></span>
-                </button>
-              </div>
-
-              <div class="service__slide-textBG">
-                <span
-                  >креативный дизайн креативный дизайн креативный дизайн</span
-                >
-                <span
-                  >креативный дизайн креативный дизайн креативный дизайн</span
-                >
+                <span>Notion база Notion база Notion база</span>
+                <span>Notion база Notion база Notion база</span>
               </div>
             </div>
           </div>
@@ -1216,14 +1466,23 @@
           </div>
 
           <div class="service__modal-btn">
-            <a href="#" class="primary-btn">
-              <div>заполнить форму</div>
+            <a
+              href="https://docs.google.com/forms/d/1JSP-7YmVkimc5ihcEhujuzmZFixO_ScBE3JtoQNKnVA/edit?usp=sharing"
+              class="primary-btn"
+              id="service__modal-tabsItemLink"
+            >
+              <div class="service__modal-tabsItemLinkText">заполнить форму</div>
               <span class="dot"></span>
             </a>
           </div>
         </div>
         <div class="service__modal-img">
-          <img src="./img/project.png" alt="project photo" />
+          <img
+            class="lazyload"
+            data-src="./img/project.png"
+            src="./img/project.png"
+            alt="project photo"
+          />
         </div>
       </div>
     </div>
@@ -1284,7 +1543,12 @@
             </p>
           </div>
           <div class="form__box-right form__right">
-            <img src="./img/my__photo.png" alt="my__photo" />
+            <img
+              class="lazyload"
+              data-src="./img/my__photo-form.png"
+              src="./img/my__photo-form.png"
+              alt="my__photo"
+            />
           </div>
         </div>
       </div>
@@ -1298,7 +1562,7 @@
               <a
                 href=""
                 class="typewrite"
-                data-period="4000"
+                data-period="6000"
                 data-type='[ "Оставить заявку.", "Связаться со мной."]'
               >
                 <span class="wrap"></span>
@@ -1312,14 +1576,20 @@
             </p>
 
             <button class="service__btn">
-              <a href="#"
+              <a
+                href="https://docs.google.com/forms/d/1JSP-7YmVkimc5ihcEhujuzmZFixO_ScBE3JtoQNKnVA/edit?usp=sharing"
                 ><div>заполнить форму</div>
                 <span class="dot"></span
               ></a>
             </button>
           </div>
           <div class="header__modal-img">
-            <img src="./img/project.png" alt="project" />
+            <img
+              class="lazyload"
+              data-src="./img/project.png"
+              src="./img/project.png"
+              alt="project"
+            />
           </div>
         </div>
       </div>
@@ -1350,6 +1620,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="./js/scripts.min.js"></script>
   </body>
 </html>
